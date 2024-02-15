@@ -1,0 +1,35 @@
+CATATAN
+
+Bikin virtual environment
+ - python -m venv (nama env)
+ - (nama env)\Scripts\activate
+
+   Set-ExecutionPolicy RemoteSigned
+
+Install Django
+ - pip Install django
+
+Create project
+ - django-admin startproject (nama project)
+Run
+ - python manage.py runserver
+
+Create app
+ - cd /nama_project_yg_baru_aja_di_buat
+ - python manage.py startapp (nama app)
+
+Hasil direktori:
+nama_project_yg_baru_aja_di_buat
+    manage.py
+    nama_project_yg_baru_aja_di_buat/
+    nama_app_yg_baru_aja_di_buat/
+        migrations/
+            __init__.py
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        tests.py
+        views.py
+
+Buat file urls.py baru di app
