@@ -33,3 +33,6 @@ nama_project_yg_baru_aja_di_buat
         views.py
 
 Buat file urls.py baru di app
+
+
+di django bisa bikin beberapa app di dalam 1 projek

@@ -9,8 +9,8 @@ urlpatterns = [
     path('home/', views.home, name='home'),
 ]
 
-app_name = 'app_name_kedua'
+# app_name = 'app_name_kedua'
 
-urlpatterns = [
-    path('home/', views.home, name='home'),
-]
+# urlpatterns = [
+#     path('kedua/', views.index, name='index_kedua'),
+# ]

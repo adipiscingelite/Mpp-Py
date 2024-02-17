@@ -9,4 +9,7 @@ def index(request):
 def home(request):
     return render(request, 'home.html')
 
-# cek
+# def index_kedua(request):
+#     return render(request, 'kedua/home.html')
+
+# # cek
