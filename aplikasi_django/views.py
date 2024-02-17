@@ -9,3 +9,4 @@ def index(request):
 def home(request):
     return render(request, 'home.html')
 
+# cek
