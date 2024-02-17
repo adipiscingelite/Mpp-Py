@@ -6,9 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-  <h4>ini adalah index.html kedua</h4>
+  <h4>ini adalah .html app_name kedua</h4>
   <a href="{% url 'pertama:index' %}">Kembali ke index</a>
 
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius optio delectus quod officia dicta in culpa, molestiae vitae tempora ex. Ratione dicta necessitatibus similique maxime non? Quae velit magnam iure.</p>
+
+  <hr>
+
+  <h3>List</h3>
+  <ul>
+      {% for product in products %}
+      <li>{{ product.name }} - Rp{{ product.price }}</li>
+      {% endfor %}
+  </ul>
 </body>
 </html>
