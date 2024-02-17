@@ -6,8 +6,8 @@ def index(request):
     return render(request, 'index.html')
   
 
-def home(request):
-    return render(request, 'home.html')
+def blog(request):
+    return render(request, 'blog.html')
 
 # def index_kedua(request):
 #     return render(request, 'kedua/home.html')

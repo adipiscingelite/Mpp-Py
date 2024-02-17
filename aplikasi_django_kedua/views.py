@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def indexp(request):
-    return render(request, 'halo.html')
+def tes(request):
+    return render(request, 'tes.html')

@@ -1,15 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" href="https://i.pinimg.com/474x/23/b9/e8/23b9e86b29aecf76cc46575303487018.jpg"
+    type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-  <h4>ini adalah index.html pertama</h4>
-  <a href="{% url 'pertama:home' %}">Menuju home</a>
-  <br>
-  <a href="{% url 'kedua:indexp' %}">Menuju index kedua</a>
 
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a href="{% url 'pertama:index' %}" class="text-decoration-none">
+        <img src="https://i.pinimg.com/474x/a0/80/57/a08057ebad40b41fa1750364083adfd3.jpg" alt="Logo" width="35"
+          height="auto" class="d-inline-block align-text-top">
+        <b class="ps-2">SIJA</b>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'pertama:blog' %}">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div class="container-fluid">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/474x/8e/2a/89/8e2a89d4a962eb36be1c51f19ad4eb99.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/474x/7f/7b/26/7f7b263902b508192465fe11a373c083.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/474x/a6/bc/95/a6bc95778a4ed052f532e32190cde8b0.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="d-flex gap-4 container my-5">
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/1d/a2/fa/1da2fa7abef80d5ddf7f613b0d35ea01.jpg" class="card-img-top"
+          alt="...">
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img src="https://i.pinimg.com/474x/e0/64/43/e06443b9439ca8611248d17cad479892.jpg" class="card-img-top"
+          alt="...">
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img src="https://i.pinimg.com/474x/a7/df/ce/a7dfce90eae177fbe9a9f345b2d5cd12.jpg" class="card-img-top"
+          alt="...">
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+    </div>
+    <p class="container">
+      Cuma buat yoba django url <code> % url 'pertama:blog' % </code> yang kayak gini dan <code> % url 'kedua:blog' % </code> kayak gini
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

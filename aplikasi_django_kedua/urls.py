@@ -4,5 +4,5 @@ from . import views  # Mengimport view yang sudah Anda definisikan
 app_name = 'kedua'
 
 urlpatterns = [
-    path('woii/', views.indexp, name='indexp'),
+    path('tes/', views.tes, name='tes'),
 ]
