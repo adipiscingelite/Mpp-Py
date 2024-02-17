@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # 'coba.apps.BlogConfig',
-    # 'app_name_kedua',
+    'aplikasi_django',
+    'aplikasi_django_kedua',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

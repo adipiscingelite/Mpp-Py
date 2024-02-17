@@ -36,3 +36,4 @@ Buat file urls.py baru di app
 
 
 di django bisa bikin beberapa app di dalam 1 projek
+salah satu bisa dijadiin page root tapi cuma boleh ada 1 file index.html, kalau ada 2 nanti yg diakses malah salah satu(kayake)

@@ -1,16 +1,10 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
-app_name = 'app_name_pertama'
+app_name = 'pertama'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    # path('/', views., name=''),
     path('home/', views.home, name='home'),
+    path('kedua/', include('aplikasi_django_kedua.urls')),
 ]
-
-# app_name = 'app_name_kedua'
-
-# urlpatterns = [
-#     path('kedua/', views.index, name='index_kedua'),
-# ]

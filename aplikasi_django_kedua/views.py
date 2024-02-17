@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def indexp(request):
+    return render(request, 'halo.html')
