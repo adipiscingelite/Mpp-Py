@@ -55,7 +55,7 @@ ROOT_URLCONF = 'project_django_saya.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'aplikasi_django' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'project_django_saya.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db_py',
+        'USER': 'root',
+        'PASSWORD': '',
+        'PORT': '3306',
+        'HOST': 'localhost'
     }
 }
 
